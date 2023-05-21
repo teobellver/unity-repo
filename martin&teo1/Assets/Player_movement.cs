@@ -7,7 +7,7 @@ public class Player_movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.transform.position = new Vector3(-70,40,0);
     }
 
     // Update is called once per frame
