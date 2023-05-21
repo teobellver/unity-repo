@@ -12,7 +12,7 @@ public class gravity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = new Vector3(gameObject.transform.position.x + 0.1f, gameObject.transform.position.y,gameObject.transform.position.z);
+        gameObject.transform.position = new Vector3(-10,2,0);
         
     }
 }
