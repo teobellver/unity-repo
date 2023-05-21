@@ -2235,6 +2235,7 @@ GameObject:
   - component: {fileID: 2121488243}
   - component: {fileID: 2121488242}
   - component: {fileID: 2121488241}
+  - component: {fileID: 2121488245}
   m_Layer: 0
   m_Name: Dynamic Sprite
   m_TagString: Untagged
@@ -2339,10 +2340,22 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121488240}
   m_LocalRotation: {x: -0, y: -0, z: -0.70242184, w: 0.7117608}
-  m_LocalPosition: {x: -9.13, y: 2.92, z: 0}
+  m_LocalPosition: {x: -2.5, y: 2.57, z: 0}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.243}
+--- !u!114 &2121488245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121488240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc91ffcd3689d4043a1b52955a3290dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
