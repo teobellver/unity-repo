@@ -7,12 +7,12 @@ public class gravity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<Transform>().position = new Vector3(-9, 3,0);
     }
 
     // Update is called once per frame
     void Update()
     {
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x + 0.1f, gameObject.transform.position.y,gameObject.transform.position.z);
         
     }
 }
