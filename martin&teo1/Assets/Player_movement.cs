@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player_movement : MonoBehaviour
 {
+    bool canJump = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,16 +18,25 @@ public class Player_movement : MonoBehaviour
         //Izquierda derecha
         if (Input.GetKey("a"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-10000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-12000f * Time.deltaTime, 0));
         }
         if (Input.GetKey("d"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(10000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(12000f * Time.deltaTime, 0));
         }
         //jump 
-        if (Input.GetKeyDown("space")){
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 5000f));
+        if (Input.GetKeyDown("space") && canJump == true){
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7000f));
+            canJump = false;
         }
         //salto
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.tag == "Jump")
+        {
+            canJump = true;
+        }
     }
 }
