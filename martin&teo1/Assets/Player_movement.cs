@@ -25,7 +25,7 @@ public class Player_movement : MonoBehaviour
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(12000f * Time.deltaTime, 0));
         }
         //jump 
-        if (Input.GetKeyDown("space") && canJump == true){
+        if (Input.GetKeyDown("space") && canJump && gameObject.transform.position.y>=0){
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7000f));
             canJump = false;
         }
