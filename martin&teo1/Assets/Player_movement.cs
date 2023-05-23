@@ -17,7 +17,8 @@ public class Player_movement : MonoBehaviour
     {
         //Izquierda derecha
         if (Input.GetKey("a"))
-        {
+        {   
+
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-12000f * Time.deltaTime, 0));
         }
         if (Input.GetKey("d"))
