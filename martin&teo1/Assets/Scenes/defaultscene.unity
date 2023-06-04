@@ -312,7 +312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.06769, y: 44.871082, z: -10}
+  m_LocalPosition: {x: 80.03221, y: 44.871082, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -416,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087927149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.06769, y: 44.871082, z: -10}
+  m_LocalPosition: {x: 80.03221, y: 44.871082, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -657,6 +657,7 @@ GameObject:
   - component: {fileID: 1454474015}
   - component: {fileID: 1454474014}
   - component: {fileID: 1454474017}
+  - component: {fileID: 1454474018}
   m_Layer: 0
   m_Name: amongus_enemigo
   m_TagString: Untagged
@@ -745,7 +746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454474013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 352.82422, y: -24.086819, z: 0}
+  m_LocalPosition: {x: 93, y: -125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -778,6 +779,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &1454474018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454474013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a7d4ca4de27c64b83cc689b7562cbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1100419980}
+  PlayerT: {fileID: 1100419984}
+  playerC: {fileID: 1100419985}
 --- !u!1 &1542325088
 GameObject:
   m_ObjectHideFlags: 3
