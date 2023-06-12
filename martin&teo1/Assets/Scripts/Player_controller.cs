@@ -26,7 +26,12 @@ public class Player_controller : MonoBehaviour
         if (Input.GetKeyDown("space") && canJump == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7000f));
-            canJump = false;
+            canJump=false;
+        };
+        if (Input.GetKeyDown("w") && canJump == true)
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7000f));
+            canJump=false;
         }
     }
 }

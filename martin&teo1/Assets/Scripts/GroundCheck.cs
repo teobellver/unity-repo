@@ -9,17 +9,9 @@ public class GroundCheck : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.tag == "Jump")
+        if(collision.tag != "Player")
         {
             playerC.canJump = true;
         }
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag != "Player")
-        {
-            playerC.canJump = false;
-        }
     }
-}

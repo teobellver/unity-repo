@@ -10,13 +10,13 @@ public class Amogus : MonoBehaviour
 
     private void Update()
     {
-        if (player.transform.position.x <= gameObject.transform.position.x)
-        {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-12000f * Time.deltaTime, 0));
-        }
-        else if (player.transform.position.x >= gameObject.transform.position.x)
+        if (player.transform.position.x >= gameObject.transform.position.x)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(12000f * Time.deltaTime, 0));
+        }
+        else if (player.transform.position.x <= gameObject.transform.position.x)
+        {
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-12000f * Time.deltaTime, 0));
         }
     }
 
