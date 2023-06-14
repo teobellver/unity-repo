@@ -8,7 +8,7 @@ public class Player_controller : MonoBehaviour
 
     void Start()
     {
-        gameObject.transform.position = new Vector3(-70, 20, 0);
+        gameObject.transform.position = new Vector3(324, -107, 0);
     }
 
     void Update()

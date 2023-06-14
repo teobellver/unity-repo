@@ -10,7 +10,7 @@ public class Player_movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.position = new Vector3(-70, 20, 0);
+        gameObject.transform.position = new Vector3(302 , -107, 0);
     }
     // Update is called once per frame
     void Update()
@@ -19,15 +19,15 @@ public class Player_movement : MonoBehaviour
         if (Input.GetKey("a"))
         {   
 
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-12000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-20000f * Time.deltaTime, 0));
         }
         if (Input.GetKey("d"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(12000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(20000f * Time.deltaTime, 0));
         }
         //jump 
         if (Input.GetKeyDown("space") && canJump){
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 7000f));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 14000f));
             canJump = false;
         }
         //salto
