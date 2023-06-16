@@ -16,11 +16,11 @@ public class Player_controller : MonoBehaviour
         //Izquierda derecha
         if (Input.GetKey("a"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-12000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(-16000f * Time.deltaTime, 0));
         }
         if (Input.GetKey("d"))
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(12000f * Time.deltaTime, 0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(16000f * Time.deltaTime, 0));
         }
         //jump 
         if (Input.GetKeyDown("space") && canJump == true)
