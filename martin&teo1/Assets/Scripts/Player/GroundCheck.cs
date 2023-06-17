@@ -13,5 +13,7 @@ public class GroundCheck : MonoBehaviour
         {
             playerC.canJump = true;
         }
+        
     }
+    
     }
