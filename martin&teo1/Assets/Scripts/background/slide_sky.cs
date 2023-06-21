@@ -14,5 +14,5 @@ public class slide_sky : MonoBehaviour
     void Update()
     {
         gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(1,0));      
-if (gameObject.transform.position>1000){gameObject.transform.position=0}
+if (gameObject.transform.position>1000){gameObject.transform.position=0};
     }}
